@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.airbnb.android:epoxy-paging:3.11.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/64850c9b5924aa368243843a5467ccc5/jetified-epoxy-paging-3.11.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/64850c9b5924aa368243843a5467ccc5/jetified-epoxy-paging-3.11.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.airbnb.android/epoxy-paging/3.11.0/3bd289194893f1601207c30b2664b5ca274e5e64/epoxy-paging-3.11.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.airbnb.android/epoxy-paging/3.11.0/6f58865a9979a7339014c6e523a63591a51ea433/epoxy-paging-3.11.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

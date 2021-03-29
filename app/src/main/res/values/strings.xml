@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MovieDb</string>
+    <string name="placeholder"></string>
+
+    <string name="general_network_error_message">Something went wrong during server communication</string>
+    <string name="category_trending">Trending</string>
+    <string name="category_genre">Genre</string>
+    <string name="category_popular">Popular</string>
+    <string name="category_top_rated">Top Rated</string>
+    <string name="category_upcoming">Upcoming</string>
+    <string name="category_video">Video</string>
+    <string name="category_comments">Comments</string>
+    <string name="category_recomendations">Recomendations</string>
+
+    <string name="view_all_click">View all Clicked!</string>
+    <string name="genre_click">Genre Clicked!</string>
+    <string name="read_more">Read more</string>
+    <string name="favorite">Favorite</string>
+</resources>

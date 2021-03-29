@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="movieId"
+            type="String" />
+        <variable
+            name="name"
+            type="String" />
+        <variable
+            name="content"
+            type="String" />
+        <variable
+            name="createdAt"
+            type="String" />
+        <variable
+            name="avatarPath"
+            type="String" />
+        <variable
+            name="rating"
+            type="Float" />
+        <variable
+            name="clickListener"
+            type="com.app.moviedb.features.home.homeinterface.MovieClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> clickListener.onMovieClicked(movieId)}">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/cardPoster"
+            app:cardCornerRadius="@dimen/size_6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="@dimen/size_39"
+                    android:layout_height="@dimen/size_39"
+                    android:id="@+id/imageAvatar"
+                    android:src="@color/colorPrimary"
+                    android:scaleType="centerCrop"
+                    app:imageUrl="@{avatarPath}"
+                    app:error="@{@color/colorAccent}"
+                    app:placeholder="@{@color/colorAccent}"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="@dimen/size_16"
+                    android:layout_marginLeft="@dimen/size_16"/>
+
+                <TextView
+                    android:id="@+id/textTitle"
+                    style="@style/TitleText.Normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{name}"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageAvatar"
+                    android:layout_marginLeft="@dimen/size_10"
+                    tools:text="Star Wars: IV" />
+
+                <TextView
+                    android:id="@+id/textVoteRating"
+                    style="@style/RatingText"
+                    android:text="@{rating.toString()}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/textTitle"
+                    app:layout_constraintStart_toEndOf="@+id/imageAvatar"
+                    android:layout_marginTop="@dimen/size_14"
+                    android:layout_marginLeft="@dimen/size_10"
+                    tools:text="7.5" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="@style/RatingBar"
+                    android:rating="@{rating}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size_16"
+                    app:layout_constraintTop_toTopOf="@+id/textVoteRating"
+                    app:layout_constraintStart_toEndOf="@+id/textVoteRating"
+                    app:layout_constraintBottom_toBottomOf="@+id/textVoteRating"
+                    android:layout_marginLeft="@dimen/size_10"/>
+
+                <TextView
+                    android:id="@+id/textReleaseDate"
+                    style="@style/ContextText.Normal"
+                    android:text="@{createdAt}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/textVoteRating"
+                    app:layout_constraintStart_toEndOf="@+id/imageAvatar"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:layout_marginTop="@dimen/size_14"
+                    android:layout_marginBottom="@dimen/size_16"
+                    tools:text="2019/12/31" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textReleaseDate"
+                    android:layout_marginTop="@dimen/size_8"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,97 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TitleText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/colorTitleText</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+    </style>
+
+    <style name="TitleText.Large">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/text_20</item>
+    </style>
+
+    <style name="TitleText.Normal">
+        <item name="android:textSize">@dimen/text_15</item>
+    </style>
+
+    <style name="TitleText.Genre">
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ContextText">
+        <item name="android:textColor">@color/colorContent</item>
+        <item name="android:drawablePadding">@dimen/size_4</item>
+<!--        <item name="android:gravity">center_vertical</item>-->
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+    </style>
+
+    <style name="ContextText.Large">
+        <item name="android:textSize">@dimen/text_18</item>
+    </style>
+    <style name="ContextText.Normal">
+        <item name="android:textSize">@dimen/text_14</item>
+    </style>
+
+    <style name="RatingBar" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="android:numStars">5</item>
+        <item name="android:isIndicator">true</item>
+        <item name="android:progressBackgroundTint">@color/colorGrey</item>
+        <item name="android:progressTint">@color/colorRating</item>
+        <item name="android:secondaryProgressTint">@color/colorRating</item>
+        <item name="android:stepSize">0.05</item>
+<!--        <item name="android:progressDrawable">@drawable/background_star</item>-->
+    </style>
+
+    <style name="VoteCountText">
+        <item name="android:textSize">@dimen/text_12</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+    </style>
+
+    <style name="ReadMoreText">
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:textColor">@color/colorReadMore</item>
+        <item name="android:gravity">right</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+    </style>
+
+    <style name="RatingText">
+        <item name="android:textSize">@dimen/text_18</item>
+        <item name="android:textColor">@color/colorRating</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+    </style>
+
+    <style name="ButtonText">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:drawablePadding">@dimen/size_4</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+    </style>
+    <style name="ButtonText.LargerNormal">
+        <item name="android:textSize">@dimen/text_16</item>
+    </style>
+    <style name="ButtonText.Normal">
+        <item name="android:textSize">@dimen/text_16</item>
+    </style>
+</resources>
